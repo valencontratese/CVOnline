@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    color: #333;
+    font-size: 28px;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #555;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  p, li {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  footer {
+    color: #777;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  img{
+    height: 35px;
+    width: 40px;
+    margin: 10px;
+  }
+  .datos{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+  }
+
+  .edu{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+  }
