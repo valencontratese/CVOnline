@@ -1,61 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</html>
-  <link rel="stylesheet" href="Styles.css">
-  <title>Currículum Vitae</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Valentina Contartese</h1>
-  </header>
+  <div class="col-sm-12"><h1 class="titulo">Valentina Contartese</h1></div>
+  
+    <div class="col-sm-3">
+        <div class="section">
+            <div class="perfil"><img src="IMG-20230629-WA0044.jpg"></div>
 
-  <section>
-    <h2>Datos Personales</h2>
-    <div class="datos"><img src="data:image/png;base64,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">
-        <p> valentina.contartese@gmail.com</p></div>
-     <div class="datos"><img src="https://us.123rf.com/450wm/photoart23d/photoart23d1902/photoart23d190201348/117662113-icono-de-s%C3%ADmbolo-de-tel%C3%A9fono-rojo-simple-aislado-ilustraci%C3%B3n-vectorial.jpg">
-        <p> (011) 2372-2717</p></div>
-    <div class="datos"><img src="https://static.vecteezy.com/system/resources/previews/011/942/650/non_2x/red-map-pin-icon-location-pin-symbol-flat-illustration-vector.jpg">
-        <p> Monte Castro, CABA</p></div>
-    <div class="datos"><img src="https://img.freepik.com/vector-premium/icono-rojo-vectorial-simple-calendario-2-signos-reprogramar-aislado-blanco_9834-363.jpg?w=2000">
-        <p> 17 de mayo del 2005</p></div>
-        
-   
+            <h2 class="stitulo">Información Personal</h2>
+            <div class="datos"><img src="https://img2.freepng.es/20180720/oea/kisspng-computer-icons-email-box-web-design-debloemistnl-5b52784cb13845.9764146915321314047259.jpg">
+            valentina.contartese@gmail.com</div>
+            <div class="datos"><img src="https://www.kindpng.com/picc/m/118-1186870_phone-icon-png-clipart-png-download-green-phone.png">
+            (011) 2372-2717</div>
+            <div class="datos"><img src="https://greendragon.xyz/wp-content/uploads/2016/08/location-pin.png">
+            Monte Castro, CABA</div>
+            <div class="datos"><img src="https://servicios.lamarina.com.mx/images/solicitud-credito/benef_msi.png">
+            17 de mayo del 2005</div>
+            
+        </div>
+    </div>
 
-  </section>
+    <div class="col-sm-9">
+        <div class="section">
+            <h2>Educación</h2>
+            <ul>
+            <li>
+                <h3>Escuela Secundaria</h3>
+                <ul>
+                <li><strong>Institución:</strong> Escuela Técnica N°35 Ingeniero Eduardo Latzina</li>
+                <li><strong>Fecha:</strong> Marzo, 2018 - Marzo, 2024</li>
+                </ul>
+            </li>
+            </ul>
 
-  <section>
-    <h2>Educación</h2>
-    <div class="datos"><img src="data:image/jpeg;base64,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">
-        <p>Ingeniero E. Latzina - 2018-2023 - Título: <strong>Técnica en Computación</strong></p></div>
-    <div class="datos"><img src="data:image/jpeg;base64,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">
-        <p>? - 2024 - Carrera: <strong>?</strong></p></div>
-  </section>
+            <h2>Experiencia Laboral</h2>
+            <ul>
+            <li>
+                <h3>Ilustrador Freelance</h3>
+                <ul>
+                    <li><strong>Puesto:</strong> Ilustrador, finanzas, atención al cliente. <strong><a href="https://linktr.ee/fuzzyfangz">Redes</a></strong></li>
+                    <li><strong>Fecha:</strong> Julio, 2020 - Actualidad</li>
+                </ul>
 
-  <section>
-    <h2>Proyectos escolares</h2>
-    <ul>
-      <li><strong>Puesto:</strong> Nombre del puesto</li>
-      <li><strong>Empresa:</strong> Nombre de la empresa</li>
-      <li><strong>Fecha de inicio:</strong> Fecha de inicio - Fecha de fin</li>
-      <li><strong>Descripción:</strong> Descripción de las responsabilidades y logros</li>
-    </ul>
-  </section>
+                <h3>Pieda Libre Pizzería</h3>
+                <ul>
+                    <li><strong>Puesto:</strong> Atención al cliente</li>
+                    <li><strong>Fecha:</strong> Noviembre, 2022 - Marzo, 2023</li>
+                </ul>
+            </li>
+            </ul>
+            
+            <h2>Habilidades y Certificados</h2>
+            <ul>
+            <li>Inglés fluido</li>
+            <li>Desarrollo Web - UTN</li>
+            <li>Programación en: C++/SQL/HTML,CSS,JS</li>
+            <li>Manejo de Excel y Photoshop</li>
+            <li>Pensamiento creativo</li>
+            </ul>
+        </div>
+    </div>
+  
+      <p class="footer">© 2023 Valentina Contartese</p>
 
-  <section>
-    <h2>Habilidades</h2>
-    <ul>
-      <li>Habilidad 1</li>
-      <li>Habilidad 2</li>
-      <li>Habilidad 3</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2023 Nombre del alumno</p>
-  </footer>
 </body>
 </html>
