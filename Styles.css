@@ -10,11 +10,11 @@ body {
 }
 
 a {
-  color: purple;
+  color: green;
 }
 
 a:hover {
-  color: red;
+  color: rgb(5, 65, 10);
 }
 
 h1 {
@@ -30,7 +30,9 @@ h2 {
 
 .perfil img{
   width: 100%;
-  border-radius: 1.5rem;
+  border-radius: 30rem;
+  height: 300px;
+  width: 300px;
 }
 
 .section {
