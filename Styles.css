@@ -10,11 +10,11 @@ body {
 }
 
 a {
-  color: green;
+  color: rgb(5, 65, 10);
 }
 
 a:hover {
-  color: rgb(5, 65, 10);
+  color: green;
 }
 
 h1 {
@@ -35,9 +35,16 @@ h2 {
   width: 300px;
 }
 
-.section {
+.section1 {
   margin-bottom: 30px;
-  background-color: #ffffff;
+  background-color: rgb(193, 221, 193);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.section2 {
+  margin-bottom: 30px;
+  background-color: rgb(193, 221, 193);
   border-radius: 15px;
   padding: 20px;
 }
@@ -57,12 +64,15 @@ h2 {
   color: #666;
 }
 
-img{
-  height: 30px;
-  width: 30px;
-  margin: 8px;
+.stitulo{
+  color: green;
 }
 
-.stitulo{
+i {
+  margin: 8px;
+  color: green;
+}
+
+.titulo{
   color: green;
 }
